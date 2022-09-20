@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все кандидаты</title>
+</head>
+<body>
+<h1>Все кандидаты</h1>
+
+{% for can in candidates %}
+<img src="{{ can.picture }}"/>
+<p><a href="/candidate/{{ can.id }}">{{ can.name }}</a></p>
+{% endfor %}
+
+</body>
+</html>
